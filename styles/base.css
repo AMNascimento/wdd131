@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Salsa&display=swap');
-
 :root {
   --primary-color: #144429;
   --secondary-color: rgb(51, 49, 90);
   --accent1-color: #2d334a;
   --accent2-color: #e5e3d9;
 
-  --heading-font: Salsa, Georgia, serif;
-  --paragraph-font: 'Roboto', sans-serif;
+  --heading-font: 'Salsa', serif;
+  --paragraph-font: 'Roboto', serif;
 
   --nav-background-color: #4b555b;
   --nav-link-color: #d7cfab;
