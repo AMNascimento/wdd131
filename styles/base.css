@@ -94,12 +94,10 @@ footer {
   height: 30px;
 }
 
-.card {
-  p,
-  li {
-    text-align: left;
-    padding: 10px;
-  }
+.card p,
+.card li {
+  text-align: left;
+  padding: 10px;
 }
 
 .card-1 {
