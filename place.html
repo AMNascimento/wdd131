@@ -24,39 +24,54 @@
       <h1>Brazil</h1>
     </header>
     <main>
-      <picture>
-        <source srcset="images/christ-hero.webp" media="(min-width: 500px)" />
-        <img src="images/christ-redeemer.webp" alt="christ the redeemer" />
-      </picture>
-      <section>
-        <h2>Data</h2>
-        <label for="area">Area: </label>
-        <output name="area" id="area">500m</output><br />
-        <label for="population">Population: </label>
-        <output name="population" id="population">210m</output><br />
-        <label for="capital">Capital: </label>
-        <output name="capital" id="capital">Brasília</output><br />
-        <label for="language">Language: </label>
-        <output name="language" id="language">Portuguese</output><br />
-        <label for="currency">Currency: </label>
-        <output name="currency" id="currency">Brazilian Real</output><br />
-        <label for="timeZone">Time Zone: </label>
-        <output name="timeZone" id="timeZone">UTC-3</output><br />
-        <label for="internetTLD">Internet TLD: </label>
-        <output name="internetTLD" id="internetTLD">.br</output><br />
-      </section>
-      <section>
-        <h2>Weather</h2>
-        <img src="images/sunny.svg" alt="sunny" />
-        <label for="temperature">Temperature: </label>
-        <output name="temperature" id="temperature">32C</output><br />
-        <label for="conditions">Conditions: </label>
-        <output name="conditions" id="conditions">Sunny</output><br />
-        <label for="wind">Wind: </label>
-        <output name="wind" id="wind">9 km/h</output><br />
-        <label for="windChill">Wind Chill: </label>
-        <output name="windChill" id="windChill">N/A</output><br />
-      </section>
+      <div class="hero">
+        <picture>
+          <source srcset="images/christ-hero.webp" media="(min-width: 700px)" />
+          <img src="images/christ-redeemer.webp" alt="christ the redeemer" />
+        </picture>
+        <section class="data">
+          <h2>Data</h2>
+          <div class="card">
+            <label for="area">Area: </label>
+            <output name="area" id="area">500m</output><br />
+
+            <label for="population">Population: </label>
+            <output name="population" id="population">210m</output><br />
+
+            <label for="capital">Capital: </label>
+            <output name="capital" id="capital">Brasília</output><br />
+
+            <label for="language">Language: </label>
+            <output name="language" id="language">Portuguese</output><br />
+
+            <label for="currency">Currency: </label>
+            <output name="currency" id="currency">Brazilian Real</output><br />
+
+            <label for="timeZone">Time Zone: </label>
+            <output name="timeZone" id="timeZone">UTC-3</output><br />
+
+            <label for="internetTLD">Internet TLD: </label>
+            <output name="internetTLD" id="internetTLD">.br</output><br />
+          </div>
+        </section>
+        <section class="weather">
+          <h2>Weather</h2>
+          <img src="images/sunny.svg" alt="sunny" class="icon" />
+          <div class="card">
+            <label for="temperature">Temperature: </label>
+            <output name="temperature" id="temperature">32C</output><br />
+
+            <label for="conditions">Conditions: </label>
+            <output name="conditions" id="conditions">Sunny</output><br />
+
+            <label for="wind">Wind: </label>
+            <output name="wind" id="wind">9 km/h</output><br />
+
+            <label for="windChill">Wind Chill: </label>
+            <output name="windChill" id="windChill">N/A</output><br />
+          </div>
+        </section>
+      </div>
     </main>
     <footer>
       <p>
