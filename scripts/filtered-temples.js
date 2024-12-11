@@ -1,6 +1,11 @@
 const mainnav = document.querySelector('.navigation');
 const hambutton = document.querySelector('#menu');
 const title = document.querySelector('.title');
+const homeMenu = document.querySelector('#homeMenu');
+const oldMenu = document.querySelector('#oldMenu');
+const newMenu = document.querySelector('#newMenu');
+const largeMenu = document.querySelector('#largeMenu');
+const smallMenu = document.querySelector('#smallMenu');
 
 hambutton.addEventListener('click', () => {
   mainnav.classList.toggle('show');
@@ -92,9 +97,34 @@ const temples = [
   },
 ];
 
-createCard();
+createCard(temples);
 
-function createCard() {
+homeMenu.addEventListener('click', () => {
+  createCard(temples);
+});
+
+oldMenu.addEventListener('click', () => {
+  createCard(
+    temples.filter((temple) => parseInt(temple.dedicated.split(',')[0]) < 1900)
+  );
+});
+
+newMenu.addEventListener('click', () => {
+  createCard(
+    temples.filter((temple) => parseInt(temple.dedicated.split(',')[0]) > 2000)
+  );
+});
+
+largeMenu.addEventListener('click', () => {
+  createCard(temples.filter((temple) => temple.area > 90000));
+});
+
+smallMenu.addEventListener('click', () => {
+  createCard(temples.filter((temple) => temple.area < 10000));
+});
+
+function createCard(temples) {
+  document.querySelector('.container').innerHTML = '';
   temples.forEach((temple) => {
     const card = document.createElement('section');
     const name = document.createElement('h3');
