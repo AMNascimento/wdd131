@@ -1,0 +1,29 @@
+:root {
+  --main-blue: #302681;
+  --main-white: #ffffff;
+  --main-text: black;
+  --secondary-text: #ffcb00;
+  --accent-text: #fc9126;
+
+  --heading-font: 'Salsa', serif;
+  --paragraph-font: 'Roboto', serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: var(--paragraph-font);
+}
+
+form {
+  display: block;
+}
+
+footer {
+  background-color: var(--main-blue);
+  color: var(--secondary-text);
+  padding: 20px 0;
+  word-spacing: 5px;
+}
