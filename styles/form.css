@@ -115,3 +115,7 @@ footer {
   justify-content: space-evenly;
   margin-top: -0.6rem;
 }
+
+#required {
+  color: red;
+}

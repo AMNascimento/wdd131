@@ -17,11 +17,11 @@
     <main>
       <h1>Product Reveiw</h1>
       <form action="review.html" method="get">
-        <label for="product">Product Name </label>
+        <label for="product">Product Name <span id="required">*</span></label>
         <select name="product" id="product" required>
           <option value="" disabled selected>Select a Product ...</option>
         </select>
-        <div>Overall Rating</div>
+        <div>Overall Rating <span id="required">*</span></div>
         <div id="radio-box" class="radio-box">
           <label for="1star"
             >&star;
@@ -44,7 +44,9 @@
             <input type="radio" id="5star" name="rating" value="5" required />
           </label>
         </div>
-        <label for="instalationDate">Date of Installation </label>
+        <label for="instalationDate"
+          >Date of Installation <span id="required">*</span></label
+        >
         <input
           type="date"
           id="instalationDate"
