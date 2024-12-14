@@ -116,6 +116,6 @@ footer {
   margin-top: -0.6rem;
 }
 
-#required {
+.required {
   color: red;
 }
