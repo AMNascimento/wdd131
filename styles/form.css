@@ -1,6 +1,6 @@
 :root {
   --main-blue: #302681;
-  --main-white: #ffffff;
+  --main-white: #f2eeee;
   --main-text: black;
   --secondary-text: #ffcb00;
   --accent-text: #fc9126;
@@ -13,12 +13,88 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-align: center;
   font-family: var(--paragraph-font);
 }
 
+body {
+  text-align: center;
+}
+
+h1 {
+  background-color: var(--main-blue);
+  color: var(--secondary-text);
+  padding: 20px 0;
+  max-width: 400px;
+  margin: 10px auto;
+  font-family: var(--heading-font);
+}
+
 form {
+  background-color: var(--main-white);
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 10px;
+}
+
+label {
   display: block;
+  padding-top: 1rem;
+  color: var(--main-text);
+  font-size: 0.9rem;
+}
+
+select,
+textarea,
+input[type='date'],
+input[type='text'],
+input[type='radio'] {
+  display: block;
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+
+input[type='checkbox'] {
+  transform: scale(1.3);
+  margin: 0 3px;
+}
+
+input[type='radio'] {
+  transform: scale(1.3);
+  margin: 3px 0;
+}
+
+input[type='submit'] {
+  border: none;
+  background-image: linear-gradient(var(--accent-text), rgb(220, 188, 11));
+  color: var(--main-blue);
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.8rem;
+  width: 100%;
+  margin: 20px 0 10px;
+  box-shadow: 1px 1px 4px #999;
+}
+
+input[type='submit']:active {
+  background-image: linear-gradient(var(--main-blue), rgb(15, 12, 80));
+  color: var(--accent-text);
+}
+
+textarea {
+  resize: none;
+  min-height: 8rem;
+}
+
+div {
+  margin-top: 1rem;
+  color: var(--main-text);
+  font-size: 0.9rem;
 }
 
 footer {
@@ -26,4 +102,12 @@ footer {
   color: var(--secondary-text);
   padding: 20px 0;
   word-spacing: 5px;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+.radio-box {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -0.6rem;
 }
