@@ -86,6 +86,10 @@ input[type='submit']:active {
   color: var(--accent-text);
 }
 
+input[type='text']:not(:placeholder-shown) {
+  background-color: white;
+}
+
 textarea {
   resize: none;
   min-height: 8rem;
