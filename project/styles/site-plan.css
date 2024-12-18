@@ -1,0 +1,79 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #28a745;
+  --neutral-color-1: #ffffff;
+  --neutral-color-2: #333333;
+  --accent-color: #ffc107;
+
+  --primary-font: 'Open Sans', sans-serif;
+  --secondary-font: 'Poppins', sans-serif;
+  --accent-font: 'Roboto Mono', monospace;
+}
+
+body,
+p,
+li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+button {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Primary Color: #007BFF */
+.primary-button {
+  background-color: #007bff;
+  color: #ffffff;
+}
+.primary-heading {
+  color: #007bff;
+}
+a:hover {
+  color: #007bff;
+}
+
+/* Secondary Color: #28A745 */
+.success-message {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+/* Neutral Color 1: #FFFFFF */
+body {
+  background-color: #ffffff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  background-color: #007bff;
+  color: #ffffff;
+}
+.card,
+.box {
+  background-color: #ffffff;
+}
+
+/* Neutral Color 2: #333333 */
+p,
+span,
+label {
+  color: #333333;
+}
+.secondary-heading {
+  color: #333333;
+}
+.border {
+  border-color: #333333;
+}
+
+/* Accent Color: #FFC107 */
+.warning-message {
+  background-color: #ffc107;
+  color: #ffffff;
+}
