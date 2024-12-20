@@ -72,8 +72,6 @@ label {
   border-color: #333333;
 }
 
-/* Accent Color: #FFC107 */
-.warning-message {
-  background-color: #ffc107;
-  color: #ffffff;
+img {
+  display: block;
 }
