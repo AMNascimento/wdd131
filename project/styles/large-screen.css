@@ -1,4 +1,59 @@
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 768px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .hero-box {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+
+  .call-box {
+    max-width: 45%;
+  }
+
+  .hero-box img {
+    max-width: 50%;
+    margin: 0;
+  }
+
+  .call-box .title {
+    font-size: 2rem;
+  }
+
+  .call-box p {
+    font-size: 1rem;
+  }
+
+  .projects-box h2 {
+    font-size: 1.8rem;
+  }
+
+  .project-list {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .news-letter-box {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .news-letter-box img {
+    max-width: 30%;
+    margin-right: 20px;
+  }
+
+  .form-box {
+    max-width: 70%;
+  }
+
+  .form-box h3 {
+    font-size: 1.5rem;
+  }
+
   .navigation {
     display: flex;
   }
