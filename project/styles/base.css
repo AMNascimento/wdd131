@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #007bff;
+  --primary-color: #034a95;
   --secondary-color: #28a745;
   --neutral-color-1: #ffffff;
   --neutral-color-2: #333333;
@@ -14,15 +14,214 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-align: center;
-  font-family: var(--paragraph-font);
+  font-family: var(--primary-font);
 }
 
 header {
-  background-color: var(--main-blue);
-  color: var(--secondary-text);
+  background-color: var(--primary-color);
+  color: var(--neutral-color-1);
   display: flex;
   justify-content: space-between;
+}
+
+body {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+}
+
+form {
+  background-color: var(--main-white);
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 10px;
+}
+
+label {
+  display: block;
+  padding-top: 1rem;
+  color: var(--main-text);
+  font-size: 0.9rem;
+}
+
+select,
+textarea,
+input[type='date'],
+input[type='text'],
+input[type='email'] {
+  display: block;
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+
+input[type='checkbox'] {
+  transform: scale(1.3);
+  margin: 0 3px;
+}
+
+input[type='radio'] {
+  transform: scale(1.3);
+  margin: 3px 0;
+}
+
+input[type='submit'] {
+  border: none;
+  background-image: linear-gradient(var(--accent-text), rgb(220, 188, 11));
+  color: var(--main-blue);
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.8rem;
+  width: 100%;
+  margin: 20px 0 10px;
+  box-shadow: 1px 1px 4px #999;
+}
+
+input[type='submit']:active {
+  background-image: linear-gradient(var(--main-blue), rgb(15, 12, 80));
+  color: var(--accent-text);
+}
+
+input[type='text']:not(:placeholder-shown) {
+  background-color: white;
+}
+
+textarea {
+  resize: none;
+  min-height: 8rem;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--neutral-color-1);
+  padding: 20px 0;
+  word-spacing: 5px;
+}
+
+.components-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 25px;
+  padding: 25px;
+  place-items: center;
+}
+
+.component-img {
+  width: 90%;
+  max-height: 70%;
+  height: auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.component-card {
+  background-color: rgb(226, 231, 235);
+  height: 400px;
+  align-content: center;
+}
+
+.label {
+  font-weight: 700;
+}
+
+.icon {
+  max-width: 80px;
+  /* margin-top: 0; */
+  padding: 15px;
+}
+
+.button {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 100;
+  padding: 15px;
+  background-color: var(--primary-color);
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-shadow: 1px 1px 20px #000000;
+  border: solid #337fed 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button:hover {
+  background: #28a745;
+  border: solid #0059a0 1px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.navigation {
+  list-style: none;
+  display: none;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.navigation a {
+  flex: 1 1 100%;
+  font-family: var(--secondary-font);
+  display: block;
+  color: var(--neutral-color-1);
+  padding: 0.75rem;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  font-weight: 700;
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.show {
+  display: block;
+}
+
+.mobile-menu {
+  display: block;
+  min-width: 80%;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 5px auto;
+}
+
+#menu.show::before {
+  content: 'X';
+}
+
+#menu {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  margin-left: -50px;
+  color: var(--secondary-text);
+}
+
+#menu::before {
+  content: '≡';
 }
 
 /* body,
